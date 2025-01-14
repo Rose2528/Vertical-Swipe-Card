@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(to right, #ff4b5c, #ff7f32);
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+.gallery {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  color: #000;
+  overflow: hidden;
+  visibility:hidden;
+}
+
+.cards {
+  position: absolute;
+  width: 300px;
+  height: 150px;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cards li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 300px;
+  height: 150px;
+  text-align: center;
+  line-height: 150px;
+  font-size: 4rem;
+  font-family: sans-serif;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0.8rem;
+}
+
+.actions {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+button {
+  display:inline-block;
+  outline: none;
+  border: none;
+  padding: 8px 14px;
+  background: #414141;
+  box-shadow: 0px 1px 0px 414141;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 auto 10px;  
+  border-radius: 4px;
+  padding: 12px 25px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 13px;
+  line-height: 5px;
+}
+
+button:hover {
+  background: #57a818;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+button {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+a {
+  color: #88ce02;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.drag-proxy {
+  visibility: hidden;
+  position: absolute;
+}
